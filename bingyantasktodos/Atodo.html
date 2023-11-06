@@ -1,0 +1,89 @@
+<!-- 亟待解决的问题/想实现的功能 -->
+<!-- 1.主题的切换：点击todo图片，从默认主题转化为白天主题/或者多种其他的主题
+2.给某些事项添加标记，创建一个时间轴，纪念效果？
+3.背景？
+4.页面的左右是空的，能不能添加分事件：鼠标浮动到某些特定的添加某些标志的事件：右侧显示分事件？左侧添加可以添加设置不同设置item的功能？
+5.？ -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to do?</title>
+    <link rel="stylesheet" href="chead.css">
+    <link rel="stylesheet" href="cbody.css">
+    <link rel="stylesheet" href="cfoot.css">
+    <link rel="stylesheet" href="cjsadd.css">
+    <style>
+        .changed {
+            text-decoration: line-through;
+            text-decoration-thickness: 3px;
+            opacity: 0.3;
+        }
+
+        /* 这玩意要放这里，从外部引入css似乎会导致加不上change属性 */
+    </style>
+
+</head>
+
+<body style="background-color: rgb(1, 45, 52);">
+    <div class="bag1">
+        <div class="topimg">
+            <img src="todopro.webp" alt="todologo">
+        </div>
+        <div class="bodysearch">
+            <i class="tubiao1" id="checkbutton"><ion-icon name="checkmark-circle-sharp"></ion-icon></i>
+            <input type="text" placeholder="What Needs To Be Done?" id="search">
+        </div>
+        <span class="bodypage" id="bodypage">
+            <!-- 内容 -->
+        </span>
+        <div class="footer" id="footer">
+            <div class="numtaker" id="numCounter">
+                <!-- 内容 -->
+                <p>0 items left</p>
+                <!-- element.innerHTML 属性更新一个元素的内容时，这个元素原有的内容会被替换为新的内容,所以开始就用这个顶一下 -->
+            </div>
+
+            <div class="allbutton">
+                <button class="b1">
+                    <p>all</p>
+                </button>
+            </div>
+            <div class="completedbutton">
+                <button class="b2">
+                    <p>completed</p>
+                </button>
+            </div>
+            <div class="activebutton">
+                <button class="b3">
+                    <p>active</p>
+                </button>
+            </div>
+            <div class="alldonebutton">
+                <button class="b4">
+                    <p>all completed</p>
+                </button>
+            </div>
+
+        </div>
+        <div class="information">
+            <p>Enter to create a todo</p>
+            <p>Double-click to edit a todo</p>
+            <p>created by <a href="https://github.com/Mengbooo">Bolaxious'French fries</a></p>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="dtodo.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.bag1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.changed {
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    opacity: 0.3;
+}
+
+.inputElement{
+    width: 480px;
+    height: 55px;
+    background-color: rgb(17, 211, 189);
+    color: rgb(26, 30, 33);
+    border: none;
+    border-radius: 14px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left:10px; /*placeholder文字距左10px*/
+}
+
+.inputElement:focus{
+    outline: none;
+}
+/* 设置无轮廓线 */

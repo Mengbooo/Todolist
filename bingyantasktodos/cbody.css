@@ -1,0 +1,88 @@
+
+
+.bodypage {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.p {
+    font-size: 25px;
+    display: block;
+    opacity: 0.9;
+    transition: 0.2s ease-in-out;
+    border-radius: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 500px;
+    height: auto;
+    background-color: rgb(90, 90, 90);
+    color: aliceblue;
+    padding: 15px 20px 15px 20px;
+    margin: 0;
+    word-wrap: break-word/*自动换行*/
+    
+}
+
+.pchange{
+    text-decoration: line-through;
+}
+.bodypage p:hover{
+    opacity: 1;
+}
+
+input[type="checkbox"]:not(:checked) {
+    -moz-appearance: none;
+    -webkit-appearance: none; /* 去除默认外观 */
+    appearance: none;
+    border: 5px solid #35f5f5; /* 边框，solid具体作用在哪？？？ */
+    width: 22px; 
+    height: 22px; 
+    border-radius: 50%; /* 圆角 */
+    outline: none; /* 去除外部轮廓 */
+    transition: all 0.4s ease; /* 过渡效果 */
+    margin-right: 20px;
+}
+
+input[type="checkbox"]:checked{
+    -moz-appearance: none;
+    -webkit-appearance: none; /* 去除默认外观 */
+    appearance: none;
+    border: 11px solid #35f5f5; /* 边框 */
+    width: 22px; 
+    height: 22px; 
+    border-radius: 50%;
+    outline: none; /* 去除外部轮廓 */
+    transition: all 0.4s ease; /* 过渡效果 */
+    margin-right: 20px;
+}
+
+
+
+.page{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    /* text-decoration: line-through;
+    text-decoration-thickness: 3px ;
+    opacity: 0.3; */
+
+}
+.page i{
+    font-size: 30px;
+    margin-left: 20px;
+    color: rgb(4, 255, 234);
+    display: block;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.page:hover>i{
+    display: block;
+    opacity: 1;
+}
